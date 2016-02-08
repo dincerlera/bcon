@@ -1,0 +1,22 @@
+CREATE DATABASE database /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE TABLE bcons (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  fullname varchar(80) NOT NULL,
+  password varchar(64) NOT NULL,
+  imageURL varchar(40),
+  email varchar(60),
+  tel varchar(20),
+  company varchar(60),
+  title varchar(60),
+  address varchar(120),
+  city varchar(20),
+  country varchar(20),
+  latitude varchar(12),
+  longitude varchar(12),
+  ts timestamp,
+  searchtext TEXT,
+  token varchar(32),
+  PRIMARY KEY (id),
+  Key(token),
+  Fulltext (searchtext)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Context path="/" reloadable="true" crossContext="true">
+<Resource name="jdbc/database" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="root" password="ssad" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/bconDb?autoReconnect=true"/>
+</Context>
