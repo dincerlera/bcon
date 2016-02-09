@@ -64,9 +64,9 @@ public class UploadFile extends HttpServlet {
 					fileId = bconDAO.getFileId(bcon);
 					
 				} else {
-					file = new File(filePath+fileId);
+					file = new File(filePath+fileId+".png");
 					item.write(file);
-					imageURL = hostURL+filePath+fileId;
+					imageURL = hostURL+"/images/"+fileId+".png";
 					bcon.setImageURL(imageURL);
 					bcon.setId(fileId);
 					responseMsg = bconDAO.updateImageURL(bcon);
